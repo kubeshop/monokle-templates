@@ -1,1 +1,5 @@
-# monokle-templates
+# Monokle Templates
+
+Repository of default Monokle templates
+
+

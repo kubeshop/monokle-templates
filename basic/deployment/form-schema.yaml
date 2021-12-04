@@ -1,0 +1,27 @@
+type: object
+required:
+  - name
+  - image
+  - targetPort
+properties:
+  name:
+    type: string
+  replicas:
+    type: number
+    format: integer
+    default: 3
+  image:
+    type: string
+  servicePort:
+    type: number
+    format: integer
+    default: 80
+  targetPort:
+    type: number
+    format: integer
+  serviceType:
+    type: string
+    default: LoadBalancer
+    enum:
+      - LoadBalancer
+      - NodePort

@@ -1,0 +1,8 @@
+name: Deployment Template
+description: Creates a simple Deployment and Service for the specified Image
+target:
+  - project
+  - resource
+type: plain
+fileNames:
+  deployment: ${formData.name}-deployment
