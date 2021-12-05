@@ -1,0 +1,27 @@
+{
+  "name": {
+    "ui:title": "Name",
+    "ui:description": "The name of the generated service and deployment",
+    "ui:widget": "ObjectName"
+  },
+  "replicas": {
+    "ui:title": "Replicas",
+    "ui:description": "The number of Pod replicas to create"
+  },
+  "image": {
+    "ui:title": "Image",
+    "ui:description": "The Docker image to deploy"
+  },
+  "servicePort": {
+    "ui:title": "Service Port",
+    "ui:description": "The port to expose the Service on"
+  },
+  "targetPort": {
+    "ui:title": "Target Port",
+    "ui:description": "The port exposed by the Docker image"
+  },
+  "serviceType": {
+    "ui:title": "Service Type",
+    "ui:description": "The type of Service to create"
+  }
+}

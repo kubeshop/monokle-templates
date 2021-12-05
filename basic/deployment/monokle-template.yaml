@@ -1,8 +1,12 @@
+id: io.kubeshop.templates.basic.deployment
+version: 0.0.1
 name: Deployment Template
 description: Creates a simple Deployment and Service for the specified Image
 target:
   - project
   - resource
 type: plain
-fileNames:
+formSchema: form-schema.json
+formUiSchema: form-ui-schema.json
+fileNameMappings:
   deployment: ${formData.name}-deployment
