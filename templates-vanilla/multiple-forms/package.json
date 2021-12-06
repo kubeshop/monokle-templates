@@ -1,10 +1,10 @@
 {
   "name": "vanilla-templates",
   "version": "1.0.0",
-  "description": "Creates a simple Deployment and Service for the specified image",
+  "description": "Creates a two separate Deployment and ConfigMap manifests",
   "license": "MIT",
   "monoklePlugin": {
-    "id": "io.kubeshop.templates.basic.deployment",
+    "id": "io.kubeshop.templates.basic.deployment-configmap",
     "modules": [
       {
         "type": "templates/vanilla",
