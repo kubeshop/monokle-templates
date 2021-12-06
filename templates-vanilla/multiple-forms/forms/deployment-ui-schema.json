@@ -1,0 +1,10 @@
+{
+  "name": {
+    "ui:title": "Name",
+    "ui:help": "The name of the generated ConfigMap and Deployment"
+  },
+  "namespace": {
+    "ui:title": "Namespace",
+    "ui:help": "The namespace of the generated ConfigMap and Deployment"
+  }
+}

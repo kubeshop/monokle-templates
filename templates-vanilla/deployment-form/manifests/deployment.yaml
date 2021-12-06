@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ${forms[0].data.name}
+  name: ${forms[0].data.name}
+spec:
+  replicas: ${forms[0].data.replicas}
+  selector:
+    matchLabels:
+      app: ${forms[0].data.name}
+  template:
+    metadata:
+      labels:
+        app: ${forms[0].data.name}
+    spec:
+      containers:
+        - image: ${forms[0].data.image}
+          name: ${forms[0].data.name}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: ${forms[0].data.name}
+  name: ${forms[0].data.name}
+spec:
+  ports:
+    - port: ${forms[0].data.servicePort}
+      protocol: TCP
+      targetPort: ${forms[0].data.targetPort}
+  selector:
+    app: ${forms[0].data.name}
+  type: ${forms[0].data.serviceType}
+

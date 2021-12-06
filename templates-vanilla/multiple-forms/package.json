@@ -1,0 +1,34 @@
+{
+  "name": "vanilla-templates",
+  "version": "1.0.0",
+  "description": "Creates a simple Deployment and Service for the specified image",
+  "license": "MIT",
+  "monoklePlugin": {
+    "id": "io.kubeshop.templates.basic.deployment",
+    "modules": [
+      {
+        "type": "templates/vanilla",
+        "forms": [
+          {
+            "schema": "forms/deployment-schema.json",
+            "uiSchema": "forms/deployment-ui-schema.json"
+          },
+          {
+            "schema": "forms/configmap-schema.json",
+            "uiSchema": "forms/configmap-ui-schema.json"
+          }
+        ],
+        "manifests": [
+          {
+            "filePath": "manifests/deployment.yaml",
+            "fileRenameRule": "${forms[0].data.name}-deployment.yaml"
+          },
+          {
+            "filePath": "manifests/configmap.yaml",
+            "fileRenameRule": "${forms[0].data.name}-configmap.yaml"
+          }
+        ]
+      }
+    ]
+  }
+}

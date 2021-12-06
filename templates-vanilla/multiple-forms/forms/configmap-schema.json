@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "required": ["log_level"],
+  "properties": {
+    "log_level": {
+      "type": "string"
+    }
+  }
+}
