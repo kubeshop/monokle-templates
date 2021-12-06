@@ -1,0 +1,6 @@
+{
+  "log_level": {
+    "ui:title": "Log Level",
+    "ui:help": "Type of log level"
+  }
+}

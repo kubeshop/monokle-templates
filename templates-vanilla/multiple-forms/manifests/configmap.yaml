@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ${forms[0].data.name}
+  namespace: ${forms[0].data.namespace}
+data:
+  log_level: ${forms[1].data.log_level}
