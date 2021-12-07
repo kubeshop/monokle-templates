@@ -1,12 +1,11 @@
 {
   "type": "object",
   "required": [
-    "name",
     "image",
     "targetPort"
   ],
   "properties": {
-    "name": {
+    "image": {
       "type": "string"
     },
     "replicas": {
@@ -14,17 +13,16 @@
       "format": "integer",
       "default": 3
     },
-    "image": {
+    "createServiceAccount": {
+      "type": "boolean"
+    },
+    "serviceAccountName": {
       "type": "string"
     },
     "servicePort": {
       "type": "number",
       "format": "integer",
       "default": 80
-    },
-    "targetPort": {
-      "type": "number",
-      "format": "integer"
     },
     "serviceType": {
       "type": "string",
@@ -33,6 +31,12 @@
         "LoadBalancer",
         "NodePort"
       ]
+    },
+    "enableIngress": {
+      "type": "boolean"
+    },
+    "enableAutoscaling": {
+      "type": "boolean"
     }
   }
 }
