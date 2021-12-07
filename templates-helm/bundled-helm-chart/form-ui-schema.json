@@ -1,0 +1,31 @@
+{
+  "image": {
+    "ui:title": "Image",
+    "ui:help": "The Docker image to deploy"
+  },
+  "replicas": {
+    "ui:title": "Replicas",
+    "ui:help": "The number of Pod replicas to create"
+  },
+  "createServiceAccount": {
+    "ui:title": "Create ServiceAccount"
+  },
+  "serviceAccountName": {
+    "ui:title": "ServiceAccount Name",
+    "ui:help": "The name of the ServiceAccount to create"
+  },
+  "servicePort": {
+    "ui:title": "Service Port",
+    "ui:help": "The port to expose the Service on"
+  },
+  "serviceType": {
+    "ui:title": "Service Type",
+    "ui:help": "The type of Service to create"
+  },
+  "enableIngress": {
+    "ui:title": "Enable Ingress"
+  },
+  "enableAutoscaling": {
+    "ui:title": "Enable Autoscaling"
+  }
+}

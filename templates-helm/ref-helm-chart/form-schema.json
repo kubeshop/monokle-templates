@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": [
+    "acceptEula",
+    "version"
+  ],
+  "properties": {
+    "acceptEula": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "string",
+      "default": "LATEST"
+    },
+    "maxPlayers": {
+      "type": "number",
+      "format": "integer",
+      "default": 20
+    }
+  }
+}
