@@ -1,0 +1,14 @@
+{
+  "name": "plugin-with-ref-template",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "monoklePlugin": {
+    "modules": [
+      {
+        "type": "template",
+        "templateUrl": "https://example.monokle.kubeshop.io/templates/minecraft-template.json"
+      }
+    ]
+  }
+}

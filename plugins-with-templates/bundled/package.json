@@ -1,0 +1,14 @@
+{
+  "name": "plugin-with-bundled-template",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "monoklePlugin": {
+    "modules": [
+      {
+        "type": "template",
+        "templatePath": "templates-helm/ref-helm-chart/template.json"
+      }
+    ]
+  }
+}
