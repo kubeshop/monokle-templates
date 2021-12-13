@@ -1,0 +1,22 @@
+{
+  "name": "Vanilla Deployment Template",
+  "id": "io.kubeshop.example.templates.vanilla.deployment",
+  "version": "1.0.0",
+  "author": "Kubeshop",
+  "description": "Creates a simple Deployment and Service for the specified image",
+  "type": "vanilla",
+  "forms": [
+    {
+      "title": "specify something",
+      "description": "describe what this page does",
+      "schema": "form-schema.json",
+      "uiSchema": "form-ui-schema.json"
+    }
+  ],
+  "manifests": [
+    {
+      "filePath": "manifests/deployment.yaml",
+      "fileRenameRule": "${forms[0].data.name}-deployment.yaml"
+    }
+  ]
+}

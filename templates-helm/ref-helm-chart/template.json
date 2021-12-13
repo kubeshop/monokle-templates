@@ -1,0 +1,20 @@
+{
+  "name": "Helm Referenced Template",
+  "id": "io.kubeshop.example.templates.helm.referenced",
+  "version": "1.0.0",
+  "author": "Kubeshop",
+  "description": "Creates manifests to deploy a Minecraft server",
+  "type": "helm-chart",
+  "forms": [
+    {
+      "title": "Minecraft Server",
+      "description": "Default settings for your Minecraft Server",
+      "schema": "form-schema.json",
+      "uiSchema": "form-ui-schema.json"
+    }
+  ],
+  "chartName": "minecraft",
+  "chartVersion": "3.6.1",
+  "chartRepo": "https://itzg.github.io/minecraft-server-charts/",
+  "helpUrl": "https://artifacthub.io/packages/helm/minecraft-server-charts/minecraft"
+}

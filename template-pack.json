@@ -1,0 +1,12 @@
+{
+  "id": "io.kubeshop.example.templatepack",
+  "name": "Kubeshop Example Template Pack",
+  "author": "Kubeshop",
+  "description": "Example template pack",
+  "templates": [
+    "multiple-forms/template.json",
+    "deployment-form/template.json",
+    "ref-helm-chart/template.json",
+    "bundled-helm-chart/template.json"
+  ]
+}
