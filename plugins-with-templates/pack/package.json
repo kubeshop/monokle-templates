@@ -1,0 +1,14 @@
+{
+  "name": "plugin-with-template-pack",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "monoklePlugin": {
+    "modules": [
+      {
+        "type": "template-pack",
+        "packPath": "../../template-pack.json"
+      }
+    ]
+  }
+}

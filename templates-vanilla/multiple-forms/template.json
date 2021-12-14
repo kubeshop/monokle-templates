@@ -1,0 +1,28 @@
+{
+  "name": "Vanilla Deployment + ConfigMap Template",
+  "id": "io.kubeshop.example.templates.vanilla.deployment-configmap",
+  "version": "1.0.0",
+  "author": "Kubeshop",
+  "description": "Creates two separate Deployment and ConfigMap manifests",
+  "type": "vanilla",
+  "forms": [
+    {
+      "schema": "forms/deployment-schema.json",
+      "uiSchema": "forms/deployment-ui-schema.json"
+    },
+    {
+      "schema": "forms/configmap-schema.json",
+      "uiSchema": "forms/configmap-ui-schema.json"
+    }
+  ],
+  "manifests": [
+    {
+      "filePath": "manifests/deployment.yaml",
+      "fileRenameRule": "${forms[0].data.name}-deployment.yaml"
+    },
+    {
+      "filePath": "manifests/configmap.yaml",
+      "fileRenameRule": "${forms[0].data.name}-configmap.yaml"
+    }
+  ]
+}

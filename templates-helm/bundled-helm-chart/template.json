@@ -1,0 +1,17 @@
+{
+  "name": "Helm Bundled Template",
+  "id": "io.kubeshop.example.templates.helm.bundled",
+  "version": "1.0.0",
+  "author": "Kubeshop",
+  "description": "Bundled Helm Chart template",
+  "type": "helm-chart",
+  "forms": [
+    {
+      "title": "Form Title",
+      "description": "Form Description",
+      "schema": "form-schema.json",
+      "uiSchema": "form-ui-schema.json"
+    }
+  ],
+  "chartPath": "helm-chart/Chart.yaml"
+}
