@@ -4,9 +4,9 @@
   "author": "Kubeshop",
   "description": "Example template pack",
   "templates": [
-    "multiple-forms/template.json",
-    "deployment-form/template.json",
-    "ref-helm-chart/template.json",
-    "bundled-helm-chart/template.json"
+    "templates-vanilla/multiple-forms/template.json",
+    "templates-vanilla/deployment-form/template.json",
+    "templates-helm/ref-helm-chart/template.json",
+    "templates-helm/bundled-helm-chart/template.json"
   ]
 }
