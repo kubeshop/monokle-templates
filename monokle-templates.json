@@ -1,0 +1,56 @@
+{
+  "name": "Monokle Default Template Repository",
+  "templates": [
+    {
+      "name": "Vanilla Deployment + ConfigMap Template",
+      "description": "Creates two separate Deployment and ConfigMap manifests",
+      "author": "Kubeshop",
+      "icon": "",
+      "tags": [
+        "deployment"
+      ],
+      "version": "1.0.0",
+      "id": "io.kubeshop.example.templates.vanilla.deployment-configmap",
+      "helpUrl": "https://github.com/kubeshop/monokle-templates",
+      "path": "templates-vanilla/multiple-forms"
+    },
+    {
+      "name": "Helm Bundled Template",
+      "description": "Bundled Helm Chart template",
+      "author": "Kubeshop",
+      "icon": "",
+      "tags": [],
+      "version": "1.0.0",
+      "id": "io.kubeshop.example.templates.helm.bundled",
+      "helpUrl": "https://github.com/kubeshop/monokle-templates",
+      "path": "templates-helm/bundled-helm-chart"
+    },
+    {
+      "name": "Helm Referenced Template",
+      "description": "Creates manifests to deploy a Minecraft server",
+      "author": "Kubeshop",
+      "icon": "",
+      "tags": [
+        "minecraft",
+        "games"
+      ],
+      "version": "1.0.0",
+      "id": "io.kubeshop.example.templates.helm.referenced",
+      "helpUrl": "https://github.com/kubeshop/monokle-templates",
+      "path": "templates-helm/ref-helm-chart"
+    },
+    {
+      "name": "Vanilla Deployment Template",
+      "description": "Creates a simple Deployment and Service for the specified image",
+      "author": "Kubeshop",
+      "icon": "",
+      "tags": [
+        "deployment"
+      ],
+      "version": "1.0.0",
+      "id": "io.kubeshop.example.templates.vanilla.deployment",
+      "helpUrl": "https://github.com/kubeshop/monokle-templates",
+      "path": "templates-vanilla/deployment-form"
+    }
+  ]
+}
